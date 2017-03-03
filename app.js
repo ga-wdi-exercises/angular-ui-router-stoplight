@@ -1,8 +1,8 @@
 angular
-  .module("stoplight", [])
-  .controller("stoplightController", [stopLightController])
+.module("stoplight", [])
+.controller("stoplightController", [stoplightControllerFunction])
 
-function stopLightController(){
+function stoplightControllerFunction(){
   this.colors = ['red', 'yellow','green']
   this.turn = function(color){
     this.bg = color
