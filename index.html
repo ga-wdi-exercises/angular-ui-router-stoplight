@@ -7,15 +7,7 @@
   <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body ng-app='stoplight'>
-  <div ng-controller='stoplightController as vm'>
-    <div id="traffic-light">
-      <div
-      ng-repeat="color in vm.colors"
-      ng-click="vm.turn(color)"
-      ng-style="{background: vm.bg}"
-      ng-class="{ 'off': vm.bg != color }"
-      ></div>
-    </div>
+  <div ui-view>
   </div>
 </body>
 </html>
